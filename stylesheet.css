@@ -7,24 +7,32 @@ body {
 li {
   list-style: none;
 }
-
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
 .header {
   background-color: #404146;
   color: #fff;
   height: 90px;
+  width: 100%;
+  position :fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .header-logo {
   float: left;
   font-size: 30px;
   font-weight:700;
-  letter-spacing: 10px;
+  letter-spacing:5px;
   padding: 25px 40px;
 }
 
 .header-list li {
-  float: left;
-  padding: 33px 20px;
+  float: right;
+  padding:20px 20px;
   font-size: 20px;
 }
 
@@ -33,6 +41,29 @@ li {
   color:#fff;
 }
 
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .copy-container {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -105,8 +136,8 @@ li {
 
 .contact-form {
   height: 500px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: rgb(244, 244, 244);
 }
 
@@ -141,32 +172,50 @@ input, textarea {
 .contact-form p{
   font-size: 20px;
 }
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
 
 .footer {
   background-color: #7C7D83;
   color: #fff;
   height: 120px;
   padding: 40px;
-}
-
-.footer-logo {
-  float: left;
-  font-size: 32px;
-  font-size: 30px;
-  font-weight:700;
-  letter-spacing: 10px;
-}
-
-.footer-list {
-  float: right;
-}
-
-.footer-list li {
   padding-bottom: 20px;
 }
 
-.footer-list a {
-  text-decoration: none;
-  color:#fff;
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+span.menu-icon{
+  color:white;
+  float:right;
+  font-size:25px;
+  padding:21px 0;
+  display:none;
+}
+.isi{
+	bottom:10px;
+}
